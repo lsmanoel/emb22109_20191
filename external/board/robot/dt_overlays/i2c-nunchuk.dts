@@ -1,0 +1,23 @@
+// Definitions for I2C based sensors using the Industrial IO or HWMON interface.
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2708";
+
+	fragment@0 {
+		target = <&i2c_arm>;
+		__dormant__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+
+			nunchuk: nunchuk@52 {
+				compatible = "nintendo,wiimote-extension";
+				reg = <0x52>;
+				status = "okay";
+			};
+		};
+	};
+
+};

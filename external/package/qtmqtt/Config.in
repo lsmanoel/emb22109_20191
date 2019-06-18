@@ -1,0 +1,6 @@
+config BR2_PACKAGE_QTMQTT
+	bool "qtmqtt"
+	select BR2_PACKAGE_QT5BASE
+	select BR2_PACKAGE_QT5_VERSION_LATEST
+	help 
+		QT MQTT module to enable MQTT communication with QT apps.

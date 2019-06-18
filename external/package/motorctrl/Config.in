@@ -1,0 +1,5 @@
+config BR2_PACKAGE_MOTORCTRL
+	bool "motorctrl"
+	select BR2_PACKAGE_WIRINGPI
+	help 
+		Application to control GPIO connected to H Bridge on Robot platform.
