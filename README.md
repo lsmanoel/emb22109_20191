@@ -1,5 +1,4 @@
-# emb22109_20191
-EMB22109 2019.1 Final Project
+# EMB22109 2019.1 Final Project
 
 Clone it with --recurse-submodules to checkout buildroot source automatically.
 
